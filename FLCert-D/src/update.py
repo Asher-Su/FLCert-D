@@ -229,7 +229,7 @@ def test_FLcert_D_inference(args, model_list, test_dataset):
         final_pred_labels_list = torch.tensor(final_pred_labels_list,dtype=torch.int)
         correct += torch.sum(torch.eq(final_pred_labels_list, labels)).item()
         total += len(labels)
-        # test
+
     return correct/total
         # correct += torch.sum(torch.eq(pred_labels, labels)).item()
         # total += len(labels)
